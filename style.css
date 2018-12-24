@@ -1,0 +1,29 @@
+html {
+  font-size: 15px;
+ font-family: 'Inconsolata', monospace;
+ color:white;
+}
+
+body
+{
+background-color:black
+}
+
+
+header
+{
+ background-color:gray
+ 
+}
+
+#socialmedialeft
+{
+	
+	float: left;
+}
+#socialmediaright
+{
+	
+	float: right;
+}
+
