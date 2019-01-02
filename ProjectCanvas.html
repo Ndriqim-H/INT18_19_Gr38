@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Canvas</title>
+    </head>
+    <body style="background-color: royalblue">
+        <canvas id="rrathet"></canvas>
+        <script>
+            var canvas= document.getElementById("rrathet");
+            var ctx=canvas.getContext("2d");
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            
+            ctx.lineWidth=10;
+            var x=window.innerWidth/5 ,y=window.innerHeight/5, r=50;
+            var ngjyrat=['blue','black','red','yellow','green'];
+
+            for(var i=0;i<=4; i++)
+            {
+               ctx.strokeStyle=ngjyrat.shift();
+                for (var j=0;j<=100; j++)
+                {
+                    ctx.beginPath();
+                    ctx.arc(x*i+100 ,y*j+100,r,0,2*Math.PI);
+                    ctx.stroke();
+                }
+            }
+        </script>
+    </body>
+</html>
