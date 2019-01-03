@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>CSS3</title>
+        <style>
+            /*RESET I GATSHEM*/
+            html,body,header,footer,hgroup,nav,article,section.figure.figcaption,h1,h2,h3,ul,li,div,p,img
+            {
+                margin:0;
+                padding: 0;
+                font-size: 100%;
+                vertical-align: baseline;
+                border: 0;
+            }
+            
+            body
+            {
+                background-image: url("Background.jpeg");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+                background-position: 50%;
+                opacity: 0.90;
+                
+                -webkit-background-size: cover;
+                
+            }
+            
+            #trupi
+            {
+                background-color: black;
+                color: ghostwhite;
+                opacity: 0.9;
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-left:  auto;
+                margin-right: auto;
+                width: 80%;
+                height: 1000px;
+                text-align: center;
+            }
+            header
+            {
+                margin-top: 20px;
+                margin-left:  auto;
+                margin-right: auto;
+                width: 60%;
+                height: 40%;
+                background-image: linear-gradient(-45deg,black,red);
+            }
+            header p
+            {
+                width: 100px;
+            }
+            
+            header #nowrap
+            {
+                white-space: nowrap;
+                width: 100px;
+                overflow: hidden;
+                text-overflow:ellipsis;
+            }
+            header #nowrap:hover
+            {
+                overflow:visible;
+            }
+            header #wordwrap
+            {
+                word-wrap: break-word;
+            }
+            header #wordkeepall
+            {
+                word-break: keep-all;
+            }
+            header #wordbreakall
+            {
+                word-break: break-all;
+            }
+            article
+            {
+                margin-top: 20px;
+                width: 60%;
+                height: 40%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="trupi"><span style="visibility: hidden">-</span>
+            <header>
+                Header elementi
+                <p id="nowrap">Ky eshte nje paragraf shume i gjate per ta nxene si duhet </p><br/>
+                <p id="wordwrap">Ky eshte nje paragraf me nje fjale shuuuuuuuuuuuuuuuume te gjate e cila shperbehet </p><br/>
+                <p id="wordkeepall">Ky paragraf do te thyhet vetem-ku-ka-vijeza-nese-nevojitet</p><br/>
+                <p id="wordbreakall">Ky paragraf do te thyhet gjithmone ne &ccedil;faredo shkronje</p><br/>
+            </header>
+            
+            <article>
+                <h2>Artikulli</h2>
+            </article>
+        </div>
+    </body>
+</html>
