@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Transformimet 2D dhe tranzicionet</title>
+    <style>
+        #xRot
+        {
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            
+            transform: rotateX(50deg);
+            -webkit-transform: rotateX(50deg);
+            -moz-transform: rotateX(50deg);
+        }
+        #yRot
+        {
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transform: rotateY(55deg);
+            -webkit-transform: rotateY(55deg);
+            -moz-transform: rotateY(55deg);
+        }
+        #zRot
+        {
+            margin: auto;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            transform: rotateZ(45deg);
+            -webkit-transform: rotateZ(45deg);
+            -moz-transform: rotateZ(45deg);
+        }
+        
+        #Xtranslate
+        {
+            margin: 0;
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            transform: translateX(1000px);
+            
+            -webkit-transform: translateX(1000px);
+            -moz-transform: translateX(1000px);
+        }
+        #Ytranslate
+        {
+            margin: 0;
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            transform: translateY(900px);
+            
+            -webkit-transform: translateY(900px);
+            -moz-transform: translateY(900px);
+        }
+        
+        #det1
+            {
+                margin: 10%;
+                width: 300px;
+                height: 100px;
+                background-color: royalblue;
+                transition: width 2s, height 1s, transform 3s;             
+                -webkit-transition: width 1s, height 1s, transform 3s; 
+                -moz-transition: width 1s, height 1s, transform 3s; 
+            }
+            
+            #det1:hover
+            {
+                width: 500px;
+                height: 200px;
+                
+                transform: rotate(40deg);
+                /*Chrome dhe safari*/
+                -webkit-transform: rotate(40deg);
+                /*Mozilla*/
+                -moz-transform: rotate(40deg);
+            }
+    </style>
+</head>
+<body>
+    <div id="xRot"><h1>Div qe rrotullohet rreth X</h1></div>
+    <div id="yRot"><h1>Div qe rrotullohet rreth Y</h1></div>
+    <div id="zRot"><h1>Div qe rrotullohet rreth Z</h1></div>
+    <div id="Xtranslate"></div>
+    <div id="Ytranslate"></div>
+    <div id="det1"></div>
+</body>
+</html>
