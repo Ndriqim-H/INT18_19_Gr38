@@ -102,19 +102,19 @@
     }
 
     /*Navigatori*/
-    nav
-    {   
-        margin: 3% 1% 0 1%;
-        padding: 20px 0 15px 0;
-        border-top: 1px solid;
-        border-bottom: 1px solid;
-    }
-    nav img
+     nav
+                {   
+                    margin: 2% 1% 0 1%;
+                    padding: 20px 0 20px 20%;
+                    border-top: 1px solid;
+                    border-bottom: 1px solid;
+                }
+				nav img
     {
         margin: 0 0 0 5px;
         padding: 0 0 0 0;
-        width:160px;
-        height:160px;
+        width:135px;
+        height:135px;
     }
     .navpictures
     {
