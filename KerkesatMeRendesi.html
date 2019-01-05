@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html manifest="KerkesatMeRendesi.cached">
+    <head>
+        <title>Bg me kohe</title>
+        <script src="BackgroundColorByTime.js"></script>
+    </head>
+    <body>
+        
+        <h1>Local Storage</h1>
+        <button onclick="clickCounterLocal()">Klikoni!</button>
+        <button onclick="resetCounterLocal()">Reset</button>
+        <br/><br/>
+        <div id="rezultati1"></div>
+        <p>Nese klikoni butonin do te shihni numri duke u rritur. "Local storage" mundeson qe numri<br/> i klikimeve te ruhet edhe nese behet "refresh" faqja ose edhe nese e mbyllni tabin.</p>
+        <br/><br/><br/><br/><br/><br/>
+        
+        <h1>Session Storage</h1>
+        <button onclick="clickCounterSession()">Klikoni!</button>
+        <button onclick="resetCounterSession()">Reset</button>
+        <br/><br/>
+        <div id="rezultati2" style=""></div>
+        <p>Nese klikoni butonin do te shihni numri duke u rritur. "Session storage" mundeson qe numri<br/> i klikimeve te ruhet edhe nese behet "refresh" faqja por jo edhe nese e mbyllni tabin.</p>
+        <script>
+            
+            //
+            function clickCounterLocal()
+            {
+                if(typeof(Storage)!=="undefined")
+                {
+                    if (localStorage.clickcount)
+                        localStorage.clickcount=Number(localStorage.clickcount)+1;
+                    else
+                    {
+                        localStorage.clickcount=1;
+                    }
+                    document.getElementById("rezultati1").innerHTML="Keni klikuar butonin "+ localStorage.clickcount + " here";
+                }
+                else
+                    document.getElementById("rezultati1").innerHTML="Browseri juaj nuk e suporton \"Web storage\"  ";
+            }
+            
+            function resetCounterLocal()
+             {
+                 if(typeof(Storage)!=="undefined")
+                {
+                    if (localStorage.clickcount)
+                        localStorage.clickcount=0;
+                    else
+                    {
+                        localStorage.clickcount=1;
+                    }
+                    document.getElementById("rezultati1").innerHTML="Keni klikuar butonin "+ localStorage.clickcount + " here";
+                }
+                else
+                    document.getElementById("rezultati1").innerHTML="Browseri juaj nuk e suporton \"Web storage\"";
+            }
+            
+            function clickCounterSession()
+            {
+                if(typeof(Storage)!=="undefined")
+                    {    if(sessionStorage.clickcount)
+                            sessionStorage.clickcount=Number(sessionStorage.clickcount)+1;
+                    else
+                    {
+                        sessionStorage.clickcount=1;
+                    }
+                    document.getElementById("rezultati2").innerHTML="Keni klikuar butonin "+ sessionStorage.clickcount + " here";
+                    }
+            else
+                    document.getElementById("rezultati2").innerHTML="Browseri juaj nuk e suporton \"Session storage\"";
+            }
+            
+            function resetCounterSession()
+            {
+                if(typeof(Storage)!=="undefined")
+                {
+                    if(sessionStorage.clickcount)
+                        sessionStorage.clickcount=0;
+                    else
+                        sessionStorage.clickcount=1;
+                    document.getElementById("rezultati2").innerHTML="Keni klikuar butonin "+ sessionStorage.clickcount + " here";
+                }
+                else
+                    document.getElementById("rezultati2").innerHTML="Browseri juaj nuk e suporton \"Session storage\"";
+            }
+            
+            switch(new Date().getHours()%4){
+                        case 0:
+                            document.body.style.backgroundColor = "#F5B7B1";break;
+                        case  1:
+                            document.body.style.backgroundColor = "#D1F2EB";break;
+                        case 2: 
+                            document.body.style.backgroundColor = "#D1F2EB"; break;
+                        case 3: 
+                            document.body.style.backgroundColor="#F6DDCC";
+             }
+
+
+        </script>
+    </body>
+
+</html>
