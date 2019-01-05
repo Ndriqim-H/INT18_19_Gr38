@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Gjeolokacioni</title>
+    </head>
+    <body>
+
+        <p>Klikoni per te nxjerre poziten gjeografike tuajen </p>
+        <button onclick="getLocation()">Kliko!</button> 
+        <p id="p1"></p>
+
+
+        
+
+        <script>
+            var x = document.getElementById("p1");
+
+            function getLocation() 
+                        {
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(showPosition);
+              }
+              else { 
+                x.innerHTML = "Gjeolokacioni nuk perkrahet nga shfletuesi juaj.";
+              }
+            }
+
+
+
+            function showPosition(position) {
+              x.innerHTML = "Gjatesia gjeografike: " + position.coords.latitude + 
+              "<br>Gjeresia gjeografike: " + position.coords.longitude +
+              "<br>Saktesia e gjeolokacionit: "+ position.coords.accuracy+
+              "<br>Lartesia mbidetare (nese merret): " +position.coords.altitude + 
+              "<br> Saktesia e lartesise mbidetare (nese merret): "+position.coords.altitudeAccuracy +
+              "<br> Koha: " + position.timestamp;
+ 
+            }
+
+        </script>
+
+    </body>
+</html>
