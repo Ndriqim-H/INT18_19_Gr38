@@ -1,0 +1,509 @@
+
+                html,body,header,footer,nav,article,section,h1,h2,h3,ul,li,div,p,img
+
+                /*Reset*/
+                {
+                    margin:0;
+                    padding: 0;
+                    vertical-align: baseline;
+                    border: 0;
+					box-sizing: border-box;
+					
+					
+                }
+                /*Shiriti*/
+                .shiriti 
+                {
+                    margin: 0 0 0 0 ;
+                    overflow: hidden;
+                    background-color: #808080;
+					 padding: 0 0 4px 0;
+                }
+                .shiriti a 
+                {
+                    font-size: 12px;
+                    color:white;          
+                    display: inline;
+					
+                }
+
+                .shiriti a:link
+                {
+                    color: white;
+                    text-decoration: none;
+                }
+                .shiriti a:hover
+
+                {
+                    color: #6495ED;
+                    border-bottom: 1px solid;                 
+                    border-color: #6495ED;
+                }
+                .shiriti a2
+                {
+                    float: left;
+                    text-align: left;
+                    letter-spacing: normal;
+                    padding: 1px;
+                    
+					
+                }
+				
+				
+                .shiriti a1
+                {
+                    margin-left: 1%;
+                    float: left;              
+                    text-align: left;
+                    letter-spacing: normal;
+                    padding: 0;
+                   
+                }
+								 
+				
+                .shiriti a3 
+                {
+                    float: right;                 
+                    text-align: right;
+                    letter-spacing: normal;
+                    padding: 1px;
+                   
+                }
+				
+			
+				
+                .shiriti a4
+                {
+                    margin-right: 5px;
+                    float: right;
+                    text-align: right;
+                    letter-spacing: normal;
+                    padding-right: 8px;
+                   
+                }
+				
+				
+				
+                /*Trupi*/
+            body
+                {
+                    background-color: 	black;
+					font-family: 'Inconsolata', monospace;
+                    color:white;
+                }
+				
+                /*Headeri*/
+            header
+                {
+                    font-family: sans-serif;
+                    margin: 5% 0 11% 1%;
+					color: white;
+                }
+                #headline
+                {
+                    float: left;
+                }
+                #sites 
+                {
+                    float: right;
+                    margin: 0 1% 0 0;
+                    padding: 0 0 0 3px;
+                }
+                #sites ul li
+                {
+                    font-size: 18px;
+                    padding: 0 0 0 120px;
+                    list-style-type: none;
+                    display: inline;
+					
+                }
+                #sites ul li a
+				{
+					color:white;
+				}
+                #sites ul li a:link
+                {
+                    color: white;
+                    text-decoration: none;
+                }
+                #sites ul li a:hover
+
+                {
+                    color:  #e5127d;
+                    border-bottom: 2px solid;
+                    padding:0 0 10px 0;
+                    border-color:  #e5127d;
+                }
+                
+                /*Navigatori*/
+                nav
+                {   
+                    margin: 3% 1% 0 1%;
+                    padding: 20px 0 155px 0;
+                    border-top: 1px solid;
+                    border-bottom: 1px solid;
+                }
+                nav img
+                {
+                    margin: 0 0 0 5px;
+                    padding: 0 0 0 0;
+                    width:160px;
+                    height:160px;
+                }
+                .navpictures
+                {
+                    width:28%;
+
+                }
+                #headline
+                {
+                    text-align: right;
+					font-family: 'Inconsolata', monospace;
+                }
+				
+				#headline h1,h4
+						   {
+							display: block;
+							
+						   }
+				#headline h1
+				{					
+					font-size: 45px;
+					margin-top: -25px;
+				}
+				
+				#headline h4
+				{
+				 margin-top: -10px;	
+				}
+
+                /*Seksioni*/
+                section
+                {
+                    width: 62%;
+                    float: left;
+                    margin: 2% 0 2% 1%;
+					background-color: #E8E8E8;
+					
+					
+                }
+                section img
+                {
+                    width: 350px;
+					height: 250px;
+                }
+
+                #left
+                {   
+                    float:left;
+                    width:48%;
+                    overflow:hidden;   
+					padding-left: 3%;
+                }
+                 #left h2
+                {
+                    font-weight: bold;
+                    padding: 3% 0 3% 0;
+                    border-bottom: 1px solid #808080;
+					color: black;
+                }
+                #left p
+                {
+                    margin: 3% 0 0 0;
+                    height: 80px;
+                    overflow-y: scroll;
+					color: black;
+					 font-weight: bold;
+                }
+				  #left p::-webkit-scrollbar
+				  {
+                 width: 10px;
+                }
+
+                #left p::-webkit-scrollbar-track {
+                
+                -webkit-border-radius: 6px;
+                 border-radius: 6px;
+				  background-color: #404040;
+                }
+
+                #left p::-webkit-scrollbar-thumb {
+                  -webkit-border-radius: 6px;
+                   border-radius: 6px;
+                   background: #DCDCDC; 
+                  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+                 }               
+
+                #right
+                {
+                    float:right;
+                    width:48%;
+                    overflow:auto;
+                    padding: 0 3% 0 0;
+                } 
+                #right h2
+                {
+                    padding: 3% 0 3% 0;
+                    border-bottom: 1px solid #808080;
+					color: black;
+                }
+                #right p
+                {
+                    margin: 3% 0 0 0;
+                    height: 80px;
+                    overflow: auto;
+					color: black;
+					font-weight: bold;
+                }
+				 #right p::-webkit-scrollbar
+				  {
+                 width: 10px;
+                }
+
+                #right p::-webkit-scrollbar-track {
+                
+                -webkit-border-radius: 6px;
+                 border-radius: 6px;
+				  background-color: #404040;
+                }
+
+                #right p::-webkit-scrollbar-thumb {
+                  -webkit-border-radius: 6px;
+                   border-radius: 6px;
+                   background: #DCDCDC; 
+                  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+                 }               
+                               /*ARTIKULLI*/
+               #article
+               {
+                   padding: 50% 0 0 0;
+                   color: black;
+               }
+               #article h2
+               {
+                   padding: 30px 0 0.3em 3%;
+                   border-bottom: 1px solid #808080;
+				   
+               }
+               #article p 
+               {
+                   padding: 0.6em 1% 0.5% 3%;
+				   font-weight: bold;
+               }
+              
+
+                
+                
+                /*Ana e djathte*/
+                
+                aside
+                {
+                    float: right;
+                    margin: 2% 1% 0 0;
+                    width: 35%;
+					height: 40%;
+					background-color: #E8E8E8;
+                    
+                }
+                aside h2
+                {
+                    border-bottom: 1px solid #808080;
+					
+                    padding: 3% 0 3% 3%;
+					font-weight: bold;
+					font-size: 35px;
+					color: black;
+					
+                }
+                aside img
+                {
+                    padding: 4px;
+                    border: 1px solid black;
+                    height: 80px;
+                    width: 80px;
+                }
+                aside p
+                {   
+                    height: 70px;
+                    overflow: auto;
+					color: black;
+					padding-right: 2%;
+					font-weight: bold;
+                }
+                
+                aside a
+                {
+                    text-decoration: none;
+                    text-align: center;
+                    background-color: #808080;
+                    color: white;
+                    float: right;
+                    width:40%;
+                    height:25px;
+					border-radius: 6px;
+					margin-right: 2%;
+					text-align: center;
+					padding-top: 1%;
+                }
+                aside a:hover
+                {
+                    background-color: #6495ED;
+										
+                }
+
+                
+                /*E PARA*/
+                
+                #news1
+                {   
+                    margin: 3% 0 0 0;
+                    padding: 2% 0 4% 0;
+                    border-bottom: 1px solid #808080;
+					
+					}
+                
+
+                #news1 img
+                {
+                    margin: 0 10px 0 1%;
+                    float:left;
+                }
+ 
+
+                /*E DYTA*/
+                #news2
+                {   
+                    margin: 3% 0 0 0;
+                    padding: 2% 0 4% 0;
+                    border-bottom: 1px solid #808080;
+                }
+
+                #news2 img
+                {
+                    margin: 0 10px 0 1%;
+                    float:left;
+                }
+
+                /*E TRETA*/
+                #news3
+                {   
+                    margin: 3% 0 0 0;
+                    padding: 2% 0 4% 0;
+                    border-bottom: 1px solid #808080;
+                }
+                
+
+                #news3 img
+                {
+                    margin: 0 10px 0 1%;
+                    float:left;
+                }
+
+                /*E KATERTA*/
+                
+                #news4
+                {   
+                    margin: 3% 0 0 0;
+                    padding: 2% 0 4% 0;
+                    border-bottom: 1px solid #808080;
+                }
+                
+
+                #news4 img
+                {
+                    margin: 0 10px 0 1%;
+                    float:left;
+                }
+ 
+                .newsheadline
+                {
+                    font-weight: bold;
+					font-size:  22px;
+                }
+                
+                
+
+
+              /*Footeri*/
+              
+               footer
+               {
+                   margin: 50% 0 0 0;
+				   background-color:rgb(32,32,32);
+				   
+				   
+               }
+                
+				.footer_container
+				{
+                 width: 100%;
+				 padding-bottom: 5cm;
+				 padding-top: 25px;
+				 overflow:hidden;
+				 padding-left: 50px;
+				
+                 height: 5px;
+				 clear: right;
+				
+                }
+                
+                .footer_container div.container{
+                width: 250px;
+                float: left;
+				padding: 10px;
+				
+				
+				
+                }
+                .footer_container ul{
+                list-style: none;            
+                padding: 0
+				
+				display: inline;
+  	            margin-left: 0 !important;
+   				
+                }
+                .footer_container ul li {
+                width: 170px;
+				padding: 2px;
+				color: #e5127d;
+				text-weight: 70px;
+				}
+                .footer_container ul li a
+				{
+					color:#e5127d;
+				}
+                .footer_container ul li a:link
+                {
+                    color: #e5127d;
+                    text-decoration: none;
+                }
+                .footer_container ul li:hover
+
+                {
+                    
+                    border-bottom: 1px solid;                 
+                    border-color: #808080;
+                }
+                
+    
+                .footer_container div.container h3
+                {
+                 
+                   border-bottom: 1px solid gray;
+				   color: #e5127d;
+				   font-size: 20px;
+				              
+                }
+                .email
+				{
+					text-decoration: none;
+				}
+                #bottom
+                {
+                    padding: 0 0 4px 10px;
+                    overflow: hidden;
+                    background-color: #808080;
+					position:relative;
+					font-size: 14px;
+                }
