@@ -1,0 +1,190 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Jquery</title>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function()
+            {
+                $("#butoni").hide();
+                  $("#paraqit").click(function()
+                  {
+                     $("#paneli").slideToggle("slow");
+                  });
+                  $("#d1").click( function(){
+                      $("#d1").hide();
+                      $("#butoni").show();
+                  });
+                  $("#butoni").click(function()
+                  {
+                      $("#d1").show();
+                      $("#d1").css("color","Fuchsia");
+                      $("#butoni").hide();
+                  });
+                  $("#in").click(function()
+                  {
+                     $(".test").fadeIn("medium",function()
+                     {
+                         alert("Eshte bere \"Callback\" nga \"FadeIn\"");
+                     });
+                  });
+                  
+                  $("#out").click(function()
+                  {
+                     $(".test").fadeOut("slow",function()
+                     {
+                         alert("Eshte bere \"Callback\" nga \"FadeOut\"");
+                     });
+                  });
+                  
+                  $("#toggle").click(function()
+                  {
+                     $(".test").fadeToggle(1000,function()
+                     {
+                         alert("Eshte bere \"Callback\" nga \"FadeToggle\"");
+                     }); //milisekonda
+                  });
+                  
+                  $("#to").click(function()
+                  {
+                     $(".test").fadeTo("medium", 0.35, function()
+                     {
+                         alert("Eshte bere \"Callback\" nga \"FadeTo\"");
+                     }); //0.35 eshte opacity
+                  });
+                  
+                  $("#animate").click(function ()
+                  {
+                     $(".test") .animate({width:"200px"});
+                  });
+                  
+                  $("#reset").click(function ()
+                  {
+                     $(".test") .animate({width:"100px"});
+                  });
+                  
+                  
+                  $("#btn1").click(function ()
+                  {
+                     $("#test1") .text("U nderrua paragrafi");
+                  });
+                  
+                  $("#btn2").click(function ()
+                  {
+                     $("#test2").html("<h1>Hello World!</h1>");
+                  });
+                  
+                  $("#btn3").click(function ()
+                  {
+                     $("#test3").val("Filan Fisteku");
+                  });
+                  
+                  $("#add").click(function ()
+                  {
+                     $("#divizion").add("#add").css("background-color","beige");
+                  });
+                  $("#rem").click(function ()
+                  {
+                     $ ("#p1").remove();
+                  });
+                  
+                  $("#btnGet").click(function ()
+                  {
+                      var x = $("p").get(8);
+                      $("#divGet").text(x.nodeName +" (id=\""+x.id+"\")" + ": "+ x.innerHTML);
+                  });
+            });
+        </script>
+        <style>
+            html,body,header,footer,hgroup,nav,article,section.figure.figcaption,h1,h2,h3,ul,li,div,p,img
+
+            {
+                margin:0;
+                padding: 0;
+                font-size: 100%;
+                vertical-align: baseline;
+                border: 0;
+            }
+            body
+            {
+                background-color: crimson;
+            }
+            #paraqit,#paneli
+            {
+                margin: 0;
+                padding:5px;
+                text-align: center;
+                background-color: royalblue;
+                border: solid 1px #999999;
+            }
+            #paneli
+            {
+                background-color: yellow;
+                padding: 50px;
+                display: none;
+            }
+            #ushtrime
+            {
+                
+            }
+            #d1:hover
+            {
+                cursor: crosshair;
+            }
+            #butoni
+            {
+                border-radius: 80%;
+                background-color:limegreen; 
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="paraqit">Klikoni me maus qe te shihni efektin e SlideToggle</div>
+        <div id="paneli">Paneli ne rreshqitje</div>
+        <div id="ushtrime">
+            <p id="d1">Ky paragraf do te fshehet nese klikoni</p>
+            <button id="butoni">Klikoni!</button><br/><br/>
+            <p>Pasi klikohet paragrafi shfaqet nje buton i cili nese klikohet do te rishfaqe paragrafin por me nje ngjyre tjeter, ne kete rast "Fuchsia"</p>
+        </div>
+        <br/><br/>
+        <div>
+            <p style="color:PaleGoldenrod">Demonstrimi i fadeIn(), fadeOut(), fadeToggle() dhe fadeTo()</p><br/>
+            <button id="in">Klikoni per fadeIn</button>
+            <button id="out">Klikoni per fadeOut</button>
+            <button id="toggle">Klikoni per fadeToggle</button>
+            <button id="to">Klikoni per fadeTo</button>
+            <button id="animate">Klikoni per t'ia nderruar dimensionet div elementeve</button>
+            <button id='reset'>Reset animacionin</button>
+            <div class="test" style="margin: 1%; width:100px; height: 100px; background-color: blue"></div>
+            <div class="test" style="margin: 1%; width:100px; height: 100px; background-color: green"></div>
+            <div class="test" style="margin: 1%; width:100px; height: 100px; background-color: darksalmon"></div>
+            <p>Alertet nga callback thirren tri here sepse thirren per secilin div element</p>
+        </div>
+        <br/><br/>
+        <p id="test1">Ky eshte nje paragraf i thjeshte.</p><br/>
+        <p id="test2">Nje paragraf tjeter.</p><br/>
+        
+        <p>Pjese per input: <input type="text" id="test3" value="Emri"></p><br/>
+        
+        <button id="btn1">Set tekstin</button>
+        <button id="btn2">Set HTML-in</button>
+        <button id="btn3">Set vleren</button>
+        <br/><br/>
+        <div id="divizion">
+        <button id="add">Shto Css ne buton the ne div</button>
+        </div>
+        <br/><br/>
+        <p id='p1'>Klikoni butonin e meposhtem per te fshire kete paragraf nga kodi</p>
+        <button id="rem">Kliko!</button>
+        <br/><br/>
+        <p id="p2">This is a paragraph</p>
+
+        <p id="p3">Ky eshte nje paragraf</p>
+        <button id="btnGet">Merr informatat e elementit te n(+1)-te</button>
+
+        <div id='divGet'>asd</div>
+
+    </body>
+</html>
